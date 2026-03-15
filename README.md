@@ -9,12 +9,6 @@ Extrait du projet [anime-sama-cli](https://github.com/CheikhNaro/anime-sama-cli)
 pip install -e /chemin/vers/anime-sama-api
 ```
 
-Ou depuis la racine du dépôt `anime-sama-cli` :
-
-```bash
-pip install -e ./anime-sama-api
-```
-
 ## Dépendance
 
 - **Python** 3.10+
@@ -73,13 +67,3 @@ asyncio.run(main())
 | `PlanningDay` / `PlanningEntry` | Planning de la semaine (jours, titres, horaires, langues) |
 | `EpisodeRelease` | Résumé d’un nouvel épisode (accueil) |
 | `Lang` / `LangId` | Langues (VOSTFR, VF, etc.) et identifiants internes |
-
-## Intégration dans un site de streaming
-
-- Utilisez `AnimeSama(site_url)` avec l’URL renvoyée par `find_site_url()` pour rester à jour si le domaine change.
-- Les URLs retournées par `Episode.best()` ou `Episode.consume_player()` pointent vers des pages de lecteurs externes (ex. Vidmoly) ; pour un lecteur intégré, il faudra extraire le flux (ex. via yt-dlp ou un service backend) côté serveur.
-- Toute la logique est **asynchrone** (`async`/`await`) : idéal pour un backend FastAPI, aiohttp, etc.
-
-## Licence
-
-GPL-3.0-or-later (comme anime-sama-cli).
