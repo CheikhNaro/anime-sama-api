@@ -1,13 +1,7 @@
 # Anime-Sama API
 
 API Python pour le catalogue et les épisodes **Anime-Sama** (anime-sama.to).  
-Extrait du projet [anime-sama-cli](https://github.com/CheikhNaro/anime-sama-cli), réutilisable dans un site de streaming, une CLI, un bot, etc.
-
-## Installation
-
-```bash
-pip install -e /chemin/vers/anime-sama-api
-```
+Extrait et mise à jour du projet [anime-sama-cli](https://github.com/Sky-NiniKo/anime-sama_api), réutilisable sur un site de streaming, une CLI, un bot, etc.
 
 ## Dépendance
 
